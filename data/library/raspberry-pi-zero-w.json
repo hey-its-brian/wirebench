@@ -1,0 +1,391 @@
+{
+  "id": "raspberry-pi-zero-w",
+  "name": "Raspberry Pi Zero W",
+  "category": "Boards",
+  "tags": [
+    "raspberry pi",
+    "40-pin"
+  ],
+  "onHand": true,
+  "face": "top",
+  "verified": false,
+  "source": "Common pinout, from memory. Check against the physical part. Standard 40-pin header, pin 1 at the SD card end of the inner row.",
+  "width": 65,
+  "height": 30,
+  "color": "#1d6b3a",
+  "pins": [
+    {
+      "id": "3v3",
+      "name": "3V3",
+      "type": "3v3",
+      "x": 8.37,
+      "y": 4.77,
+      "row": "odd pins (inner row)"
+    },
+    {
+      "id": "gpio2",
+      "name": "GPIO2",
+      "type": "i2c_sda",
+      "x": 10.91,
+      "y": 4.77,
+      "row": "odd pins (inner row)",
+      "gpio": 2
+    },
+    {
+      "id": "gpio3",
+      "name": "GPIO3",
+      "type": "i2c_scl",
+      "x": 13.45,
+      "y": 4.77,
+      "row": "odd pins (inner row)",
+      "gpio": 3
+    },
+    {
+      "id": "gpio4",
+      "name": "GPIO4",
+      "type": "gpio",
+      "x": 15.99,
+      "y": 4.77,
+      "row": "odd pins (inner row)",
+      "gpio": 4
+    },
+    {
+      "id": "gnd",
+      "name": "GND",
+      "type": "gnd",
+      "x": 18.53,
+      "y": 4.77,
+      "row": "odd pins (inner row)"
+    },
+    {
+      "id": "gpio17",
+      "name": "GPIO17",
+      "type": "gpio",
+      "x": 21.07,
+      "y": 4.77,
+      "row": "odd pins (inner row)",
+      "gpio": 17
+    },
+    {
+      "id": "gpio27",
+      "name": "GPIO27",
+      "type": "gpio",
+      "x": 23.61,
+      "y": 4.77,
+      "row": "odd pins (inner row)",
+      "gpio": 27
+    },
+    {
+      "id": "gpio22",
+      "name": "GPIO22",
+      "type": "gpio",
+      "x": 26.15,
+      "y": 4.77,
+      "row": "odd pins (inner row)",
+      "gpio": 22
+    },
+    {
+      "id": "3v3-2",
+      "name": "3V3",
+      "type": "3v3",
+      "x": 28.69,
+      "y": 4.77,
+      "row": "odd pins (inner row)"
+    },
+    {
+      "id": "gpio10",
+      "name": "GPIO10",
+      "type": "spi_mosi",
+      "x": 31.23,
+      "y": 4.77,
+      "row": "odd pins (inner row)",
+      "gpio": 10
+    },
+    {
+      "id": "gpio9",
+      "name": "GPIO9",
+      "type": "spi_miso",
+      "x": 33.77,
+      "y": 4.77,
+      "row": "odd pins (inner row)",
+      "gpio": 9
+    },
+    {
+      "id": "gpio11",
+      "name": "GPIO11",
+      "type": "spi_sck",
+      "x": 36.31,
+      "y": 4.77,
+      "row": "odd pins (inner row)",
+      "gpio": 11
+    },
+    {
+      "id": "gnd-2",
+      "name": "GND",
+      "type": "gnd",
+      "x": 38.85,
+      "y": 4.77,
+      "row": "odd pins (inner row)"
+    },
+    {
+      "id": "gpio0",
+      "name": "GPIO0",
+      "type": "other",
+      "x": 41.39,
+      "y": 4.77,
+      "row": "odd pins (inner row)",
+      "gpio": 0,
+      "note": "ID EEPROM SDA"
+    },
+    {
+      "id": "gpio5",
+      "name": "GPIO5",
+      "type": "gpio",
+      "x": 43.93,
+      "y": 4.77,
+      "row": "odd pins (inner row)",
+      "gpio": 5
+    },
+    {
+      "id": "gpio6",
+      "name": "GPIO6",
+      "type": "gpio",
+      "x": 46.47,
+      "y": 4.77,
+      "row": "odd pins (inner row)",
+      "gpio": 6
+    },
+    {
+      "id": "gpio13",
+      "name": "GPIO13",
+      "type": "gpio",
+      "x": 49.01,
+      "y": 4.77,
+      "row": "odd pins (inner row)",
+      "gpio": 13
+    },
+    {
+      "id": "gpio19",
+      "name": "GPIO19",
+      "type": "gpio",
+      "x": 51.55,
+      "y": 4.77,
+      "row": "odd pins (inner row)",
+      "gpio": 19
+    },
+    {
+      "id": "gpio26",
+      "name": "GPIO26",
+      "type": "gpio",
+      "x": 54.09,
+      "y": 4.77,
+      "row": "odd pins (inner row)",
+      "gpio": 26
+    },
+    {
+      "id": "gnd-3",
+      "name": "GND",
+      "type": "gnd",
+      "x": 56.63,
+      "y": 4.77,
+      "row": "odd pins (inner row)"
+    },
+    {
+      "id": "5v",
+      "name": "5V",
+      "type": "5v",
+      "x": 8.37,
+      "y": 2.23,
+      "row": "even pins (edge row)"
+    },
+    {
+      "id": "5v-2",
+      "name": "5V",
+      "type": "5v",
+      "x": 10.91,
+      "y": 2.23,
+      "row": "even pins (edge row)"
+    },
+    {
+      "id": "gnd-4",
+      "name": "GND",
+      "type": "gnd",
+      "x": 13.45,
+      "y": 2.23,
+      "row": "even pins (edge row)"
+    },
+    {
+      "id": "gpio14",
+      "name": "GPIO14",
+      "type": "uart_tx",
+      "x": 15.99,
+      "y": 2.23,
+      "row": "even pins (edge row)",
+      "gpio": 14
+    },
+    {
+      "id": "gpio15",
+      "name": "GPIO15",
+      "type": "uart_rx",
+      "x": 18.53,
+      "y": 2.23,
+      "row": "even pins (edge row)",
+      "gpio": 15
+    },
+    {
+      "id": "gpio18",
+      "name": "GPIO18",
+      "type": "gpio",
+      "x": 21.07,
+      "y": 2.23,
+      "row": "even pins (edge row)",
+      "gpio": 18
+    },
+    {
+      "id": "gnd-5",
+      "name": "GND",
+      "type": "gnd",
+      "x": 23.61,
+      "y": 2.23,
+      "row": "even pins (edge row)"
+    },
+    {
+      "id": "gpio23",
+      "name": "GPIO23",
+      "type": "gpio",
+      "x": 26.15,
+      "y": 2.23,
+      "row": "even pins (edge row)",
+      "gpio": 23
+    },
+    {
+      "id": "gpio24",
+      "name": "GPIO24",
+      "type": "gpio",
+      "x": 28.69,
+      "y": 2.23,
+      "row": "even pins (edge row)",
+      "gpio": 24
+    },
+    {
+      "id": "gnd-6",
+      "name": "GND",
+      "type": "gnd",
+      "x": 31.23,
+      "y": 2.23,
+      "row": "even pins (edge row)"
+    },
+    {
+      "id": "gpio25",
+      "name": "GPIO25",
+      "type": "gpio",
+      "x": 33.77,
+      "y": 2.23,
+      "row": "even pins (edge row)",
+      "gpio": 25
+    },
+    {
+      "id": "gpio8",
+      "name": "GPIO8",
+      "type": "spi_cs",
+      "x": 36.31,
+      "y": 2.23,
+      "row": "even pins (edge row)",
+      "gpio": 8,
+      "note": "CE0"
+    },
+    {
+      "id": "gpio7",
+      "name": "GPIO7",
+      "type": "spi_cs",
+      "x": 38.85,
+      "y": 2.23,
+      "row": "even pins (edge row)",
+      "gpio": 7,
+      "note": "CE1"
+    },
+    {
+      "id": "gpio1",
+      "name": "GPIO1",
+      "type": "other",
+      "x": 41.39,
+      "y": 2.23,
+      "row": "even pins (edge row)",
+      "gpio": 1,
+      "note": "ID EEPROM SCL"
+    },
+    {
+      "id": "gnd-7",
+      "name": "GND",
+      "type": "gnd",
+      "x": 43.93,
+      "y": 2.23,
+      "row": "even pins (edge row)"
+    },
+    {
+      "id": "gpio12",
+      "name": "GPIO12",
+      "type": "gpio",
+      "x": 46.47,
+      "y": 2.23,
+      "row": "even pins (edge row)",
+      "gpio": 12
+    },
+    {
+      "id": "gnd-8",
+      "name": "GND",
+      "type": "gnd",
+      "x": 49.01,
+      "y": 2.23,
+      "row": "even pins (edge row)"
+    },
+    {
+      "id": "gpio16",
+      "name": "GPIO16",
+      "type": "gpio",
+      "x": 51.55,
+      "y": 2.23,
+      "row": "even pins (edge row)",
+      "gpio": 16
+    },
+    {
+      "id": "gpio20",
+      "name": "GPIO20",
+      "type": "gpio",
+      "x": 54.09,
+      "y": 2.23,
+      "row": "even pins (edge row)",
+      "gpio": 20
+    },
+    {
+      "id": "gpio21",
+      "name": "GPIO21",
+      "type": "gpio",
+      "x": 56.63,
+      "y": 2.23,
+      "row": "even pins (edge row)",
+      "gpio": 21
+    }
+  ],
+  "links": [
+    [
+      "gnd",
+      "gnd-2",
+      "gnd-3",
+      "gnd-4",
+      "gnd-5",
+      "gnd-6",
+      "gnd-7",
+      "gnd-8"
+    ],
+    [
+      "3v3",
+      "3v3-2"
+    ],
+    [
+      "5v",
+      "5v-2"
+    ]
+  ],
+  "notes": "GPIO pins are 3.3 V only. The 5V pins are fed straight from USB power."
+}

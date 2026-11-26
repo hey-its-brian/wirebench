@@ -1,0 +1,173 @@
+{
+  "id": "esp32-c3-super-mini",
+  "name": "ESP32-C3 Super Mini",
+  "category": "Boards",
+  "tags": [
+    "esp32",
+    "c3"
+  ],
+  "onHand": true,
+  "face": "top",
+  "verified": false,
+  "source": "Common pinout, from memory. Check against the physical part. USB-C at the top.",
+  "width": 18,
+  "height": 22.5,
+  "color": "#23262b",
+  "pins": [
+    {
+      "id": "io5",
+      "name": "IO5",
+      "type": "gpio",
+      "x": 1.38,
+      "y": 2.36,
+      "row": "left",
+      "gpio": 5
+    },
+    {
+      "id": "io6",
+      "name": "IO6",
+      "type": "gpio",
+      "x": 1.38,
+      "y": 4.9,
+      "row": "left",
+      "gpio": 6
+    },
+    {
+      "id": "io7",
+      "name": "IO7",
+      "type": "gpio",
+      "x": 1.38,
+      "y": 7.44,
+      "row": "left",
+      "gpio": 7
+    },
+    {
+      "id": "io8",
+      "name": "IO8",
+      "type": "gpio",
+      "x": 1.38,
+      "y": 9.98,
+      "row": "left",
+      "gpio": 8,
+      "caps": [
+        "strapping"
+      ],
+      "internalUse": "onboard LED"
+    },
+    {
+      "id": "io9",
+      "name": "IO9",
+      "type": "gpio",
+      "x": 1.38,
+      "y": 12.52,
+      "row": "left",
+      "gpio": 9,
+      "caps": [
+        "strapping"
+      ],
+      "internalUse": "BOOT button"
+    },
+    {
+      "id": "io10",
+      "name": "IO10",
+      "type": "gpio",
+      "x": 1.38,
+      "y": 15.06,
+      "row": "left",
+      "gpio": 10
+    },
+    {
+      "id": "io20",
+      "name": "IO20",
+      "type": "uart_rx",
+      "x": 1.38,
+      "y": 17.6,
+      "row": "left",
+      "gpio": 20,
+      "note": "RX"
+    },
+    {
+      "id": "io21",
+      "name": "IO21",
+      "type": "uart_tx",
+      "x": 1.38,
+      "y": 20.14,
+      "row": "left",
+      "gpio": 21,
+      "note": "TX"
+    },
+    {
+      "id": "5v",
+      "name": "5V",
+      "type": "5v",
+      "x": 16.62,
+      "y": 2.36,
+      "row": "right"
+    },
+    {
+      "id": "gnd",
+      "name": "GND",
+      "type": "gnd",
+      "x": 16.62,
+      "y": 4.9,
+      "row": "right"
+    },
+    {
+      "id": "3v3",
+      "name": "3V3",
+      "type": "3v3",
+      "x": 16.62,
+      "y": 7.44,
+      "row": "right"
+    },
+    {
+      "id": "io4",
+      "name": "IO4",
+      "type": "gpio",
+      "x": 16.62,
+      "y": 9.98,
+      "row": "right",
+      "gpio": 4
+    },
+    {
+      "id": "io3",
+      "name": "IO3",
+      "type": "gpio",
+      "x": 16.62,
+      "y": 12.52,
+      "row": "right",
+      "gpio": 3
+    },
+    {
+      "id": "io2",
+      "name": "IO2",
+      "type": "gpio",
+      "x": 16.62,
+      "y": 15.06,
+      "row": "right",
+      "gpio": 2,
+      "caps": [
+        "strapping"
+      ]
+    },
+    {
+      "id": "io1",
+      "name": "IO1",
+      "type": "gpio",
+      "x": 16.62,
+      "y": 17.6,
+      "row": "right",
+      "gpio": 1
+    },
+    {
+      "id": "io0",
+      "name": "IO0",
+      "type": "gpio",
+      "x": 16.62,
+      "y": 20.14,
+      "row": "right",
+      "gpio": 0
+    }
+  ],
+  "notes": "IO8 drives the onboard LED and is a strapping pin. IO9 is the BOOT button and a strapping pin. IO2 is a strapping pin."
+}

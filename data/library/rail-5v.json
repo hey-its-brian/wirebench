@@ -1,0 +1,24 @@
+{
+  "id": "rail-5v",
+  "name": "5V rail",
+  "category": "Power and passives",
+  "tags": [
+    "power",
+    "rail",
+    "bus",
+    "5v"
+  ],
+  "onHand": true,
+  "face": "top",
+  "verified": false,
+  "source": "A drawing aid, not a physical part: a strip of pins that are all joined together.",
+  "width": 15.24,
+  "height": 3.81,
+  "color": "#b35c00",
+  "pins": [],
+  "rail": {
+    "type": "5v",
+    "label": "5V"
+  },
+  "notes": "Every pin on a rail is the same net. Add or remove pins in the inspector. Rotate the rail to run it vertically."
+}

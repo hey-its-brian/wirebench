@@ -1,0 +1,57 @@
+{
+  "id": "push-button",
+  "name": "Push button (tactile, 4 leg)",
+  "category": "Power and passives",
+  "tags": [
+    "input",
+    "switch"
+  ],
+  "onHand": false,
+  "face": "top",
+  "verified": false,
+  "source": "Common pinout, from memory. Check against the physical part. Standard 6 mm tactile switch: the two legs on each long side are joined inside.",
+  "width": 7.62,
+  "height": 7.62,
+  "color": "#5b6068",
+  "pins": [
+    {
+      "id": "a1",
+      "name": "A1",
+      "type": "other",
+      "x": 1.27,
+      "y": 1.27
+    },
+    {
+      "id": "a2",
+      "name": "A2",
+      "type": "other",
+      "x": 6.35,
+      "y": 1.27
+    },
+    {
+      "id": "b1",
+      "name": "B1",
+      "type": "other",
+      "x": 1.27,
+      "y": 6.35
+    },
+    {
+      "id": "b2",
+      "name": "B2",
+      "type": "other",
+      "x": 6.35,
+      "y": 6.35
+    }
+  ],
+  "links": [
+    [
+      "a1",
+      "a2"
+    ],
+    [
+      "b1",
+      "b2"
+    ]
+  ],
+  "notes": "A1 and A2 are always joined, as are B1 and B2. Pressing the button joins A to B."
+}

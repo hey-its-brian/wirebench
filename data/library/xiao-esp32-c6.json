@@ -1,0 +1,149 @@
+{
+  "id": "xiao-esp32-c6",
+  "name": "Seeed XIAO ESP32-C6",
+  "category": "Boards",
+  "tags": [
+    "esp32",
+    "c6",
+    "xiao"
+  ],
+  "onHand": true,
+  "face": "top",
+  "verified": false,
+  "source": "Common pinout, from memory. Check against the physical part. USB-C at the top.",
+  "width": 17.8,
+  "height": 21,
+  "color": "#23262b",
+  "pins": [
+    {
+      "id": "d0",
+      "name": "D0",
+      "type": "gpio",
+      "x": 1.28,
+      "y": 2.88,
+      "row": "left",
+      "gpio": 0
+    },
+    {
+      "id": "d1",
+      "name": "D1",
+      "type": "gpio",
+      "x": 1.28,
+      "y": 5.42,
+      "row": "left",
+      "gpio": 1
+    },
+    {
+      "id": "d2",
+      "name": "D2",
+      "type": "gpio",
+      "x": 1.28,
+      "y": 7.96,
+      "row": "left",
+      "gpio": 2
+    },
+    {
+      "id": "d3",
+      "name": "D3",
+      "type": "gpio",
+      "x": 1.28,
+      "y": 10.5,
+      "row": "left",
+      "gpio": 21
+    },
+    {
+      "id": "d4",
+      "name": "D4",
+      "type": "gpio",
+      "x": 1.28,
+      "y": 13.04,
+      "row": "left",
+      "gpio": 22,
+      "note": "I2C SDA by default"
+    },
+    {
+      "id": "d5",
+      "name": "D5",
+      "type": "gpio",
+      "x": 1.28,
+      "y": 15.58,
+      "row": "left",
+      "gpio": 23,
+      "note": "I2C SCL by default"
+    },
+    {
+      "id": "d6",
+      "name": "D6",
+      "type": "gpio",
+      "x": 1.28,
+      "y": 18.12,
+      "row": "left",
+      "gpio": 16,
+      "note": "UART TX by default"
+    },
+    {
+      "id": "5v",
+      "name": "5V",
+      "type": "5v",
+      "x": 16.52,
+      "y": 2.88,
+      "row": "right"
+    },
+    {
+      "id": "gnd",
+      "name": "GND",
+      "type": "gnd",
+      "x": 16.52,
+      "y": 5.42,
+      "row": "right"
+    },
+    {
+      "id": "3v3",
+      "name": "3V3",
+      "type": "3v3",
+      "x": 16.52,
+      "y": 7.96,
+      "row": "right"
+    },
+    {
+      "id": "d10",
+      "name": "D10",
+      "type": "gpio",
+      "x": 16.52,
+      "y": 10.5,
+      "row": "right",
+      "gpio": 18,
+      "note": "SPI MOSI by default"
+    },
+    {
+      "id": "d9",
+      "name": "D9",
+      "type": "gpio",
+      "x": 16.52,
+      "y": 13.04,
+      "row": "right",
+      "gpio": 20,
+      "note": "SPI MISO by default"
+    },
+    {
+      "id": "d8",
+      "name": "D8",
+      "type": "gpio",
+      "x": 16.52,
+      "y": 15.58,
+      "row": "right",
+      "gpio": 19,
+      "note": "SPI SCK by default"
+    },
+    {
+      "id": "d7",
+      "name": "D7",
+      "type": "gpio",
+      "x": 16.52,
+      "y": 18.12,
+      "row": "right",
+      "gpio": 17,
+      "note": "UART RX by default"
+    }
+  ]
+}

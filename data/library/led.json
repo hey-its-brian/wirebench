@@ -1,0 +1,33 @@
+{
+  "id": "led",
+  "name": "LED",
+  "category": "Power and passives",
+  "tags": [
+    "passive",
+    "polarised"
+  ],
+  "onHand": false,
+  "face": "top",
+  "verified": false,
+  "source": "Generic two-lead part.",
+  "width": 5.08,
+  "height": 5.08,
+  "color": "#a8271f",
+  "pins": [
+    {
+      "id": "anode",
+      "name": "A",
+      "type": "other",
+      "x": 1.27,
+      "y": 2.54
+    },
+    {
+      "id": "cathode",
+      "name": "K",
+      "type": "gnd",
+      "x": 3.81,
+      "y": 2.54
+    }
+  ],
+  "notes": "The longer lead is the anode (A). Needs a series resistor."
+}

@@ -1,0 +1,67 @@
+{
+  "id": "lipo-charger-4pad",
+  "name": "LiPo charger with 5 V out, 4 pad",
+  "category": "Power and passives",
+  "tags": [
+    "power",
+    "battery",
+    "charger",
+    "boost",
+    "lipo",
+    "5v"
+  ],
+  "onHand": true,
+  "face": "top",
+  "verified": false,
+  "source": "Pads as Brian described his module: battery + and -, and 5 V out + and -. Charging power comes in through the USB socket, so there are no input pads. Pad positions are a guess: check them against your board.",
+  "width": 26,
+  "height": 17,
+  "color": "#1c4f9c",
+  "pins": [
+    {
+      "id": "out-pos",
+      "name": "OUT+",
+      "type": "5v",
+      "x": 6.5,
+      "y": 1.6,
+      "note": "5 V out"
+    },
+    {
+      "id": "out-neg",
+      "name": "OUT-",
+      "type": "gnd",
+      "x": 6.5,
+      "y": 15.4
+    },
+    {
+      "id": "bat-pos",
+      "name": "BAT+",
+      "type": "vbat",
+      "x": 24.4,
+      "y": 1.6
+    },
+    {
+      "id": "bat-neg",
+      "name": "BAT-",
+      "type": "gnd",
+      "x": 24.4,
+      "y": 15.4
+    }
+  ],
+  "links": [
+    [
+      "out-neg",
+      "bat-neg"
+    ]
+  ],
+  "outlines": [
+    {
+      "x": 0,
+      "y": 4.5,
+      "w": 7,
+      "h": 8,
+      "text": "USB"
+    }
+  ],
+  "notes": "Charges one LiPo cell through its USB socket and gives 5 V on OUT+. BAT- and OUT- are taken to be the same ground, as on most of these boards: confirm with a meter before relying on it."
+}

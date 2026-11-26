@@ -1,0 +1,51 @@
+{
+  "id": "ssd1306-oled-096",
+  "name": "SSD1306 0.96 inch OLED (I2C)",
+  "category": "Displays",
+  "tags": [
+    "oled",
+    "i2c"
+  ],
+  "onHand": true,
+  "face": "top",
+  "verified": false,
+  "source": "Common pinout, from memory. Check against the physical part. Display side up, header at the top. Some boards swap VCC and GND: read the silkscreen.",
+  "width": 27,
+  "height": 27,
+  "color": "#1c4f9c",
+  "pins": [
+    {
+      "id": "gnd",
+      "name": "GND",
+      "type": "gnd",
+      "x": 9.69,
+      "y": 2,
+      "row": "header"
+    },
+    {
+      "id": "vcc",
+      "name": "VCC",
+      "type": "3v3",
+      "x": 12.23,
+      "y": 2,
+      "row": "header"
+    },
+    {
+      "id": "scl",
+      "name": "SCL",
+      "type": "i2c_scl",
+      "x": 14.77,
+      "y": 2,
+      "row": "header"
+    },
+    {
+      "id": "sda",
+      "name": "SDA",
+      "type": "i2c_sda",
+      "x": 17.31,
+      "y": 2,
+      "row": "header"
+    }
+  ],
+  "notes": "I2C address is usually 0x3C. Check the VCC and GND order on your board before powering it."
+}

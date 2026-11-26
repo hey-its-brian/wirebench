@@ -1,0 +1,52 @@
+{
+  "id": "rgb-led-pl9823",
+  "name": "Addressable RGB LED, 5 mm (PL9823)",
+  "category": "Power and passives",
+  "tags": [
+    "led",
+    "addressable",
+    "rf sentinel"
+  ],
+  "onHand": true,
+  "face": "top",
+  "verified": false,
+  "source": "Common pinout, from memory. Check against the physical part. PL9823-F5 and APA106-F5 lead order. The WS2812D-F5 uses a different order: check the datasheet for the part in your hand.",
+  "width": 10.16,
+  "height": 5.08,
+  "color": "#5b6068",
+  "pins": [
+    {
+      "id": "din",
+      "name": "DIN",
+      "type": "gpio",
+      "x": 1.27,
+      "y": 2.54,
+      "row": "leads"
+    },
+    {
+      "id": "vdd",
+      "name": "VDD",
+      "type": "5v",
+      "x": 3.81,
+      "y": 2.54,
+      "row": "leads"
+    },
+    {
+      "id": "gnd",
+      "name": "GND",
+      "type": "gnd",
+      "x": 6.35,
+      "y": 2.54,
+      "row": "leads"
+    },
+    {
+      "id": "dout",
+      "name": "DOUT",
+      "type": "gpio",
+      "x": 8.89,
+      "y": 2.54,
+      "row": "leads"
+    }
+  ],
+  "notes": "One data wire in, one out. A 330R resistor in series with DIN is usual."
+}

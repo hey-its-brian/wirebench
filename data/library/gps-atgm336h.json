@@ -1,0 +1,60 @@
+{
+  "id": "gps-atgm336h",
+  "name": "GPS module (ATGM336H class)",
+  "category": "Radios",
+  "tags": [
+    "gps",
+    "gnss",
+    "uart"
+  ],
+  "onHand": true,
+  "face": "top",
+  "verified": false,
+  "source": "Pin names and board size from the Hardware Inventory note (5V GND TX RX PPS). The order along the header is assumed to follow that list and is not confirmed.",
+  "width": 13.75,
+  "height": 16,
+  "color": "#1c4f9c",
+  "pins": [
+    {
+      "id": "vcc",
+      "name": "VCC",
+      "type": "5v",
+      "x": 1.795,
+      "y": 14,
+      "row": "header"
+    },
+    {
+      "id": "gnd",
+      "name": "GND",
+      "type": "gnd",
+      "x": 4.335,
+      "y": 14,
+      "row": "header"
+    },
+    {
+      "id": "tx",
+      "name": "TX",
+      "type": "uart_tx",
+      "x": 6.875,
+      "y": 14,
+      "row": "header"
+    },
+    {
+      "id": "rx",
+      "name": "RX",
+      "type": "uart_rx",
+      "x": 9.415,
+      "y": 14,
+      "row": "header"
+    },
+    {
+      "id": "pps",
+      "name": "PPS",
+      "type": "irq",
+      "x": 11.955,
+      "y": 14,
+      "row": "header"
+    }
+  ],
+  "notes": "9600 baud by default. Module TX goes to the board RX. HaleHound only uses the GPS TX line."
+}

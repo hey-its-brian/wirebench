@@ -1,0 +1,53 @@
+{
+  "id": "bme280",
+  "name": "BME280 breakout (I2C)",
+  "category": "Sensors",
+  "tags": [
+    "temperature",
+    "humidity",
+    "pressure",
+    "i2c"
+  ],
+  "onHand": false,
+  "face": "top",
+  "verified": false,
+  "source": "Common pinout, from memory. Check against the physical part. 4-pin GY-BME280 style board. Six-pin boards add CSB and SDO.",
+  "width": 13,
+  "height": 10.5,
+  "color": "#4b2a7a",
+  "pins": [
+    {
+      "id": "vin",
+      "name": "VIN",
+      "type": "3v3",
+      "x": 2.69,
+      "y": 8.5,
+      "row": "header"
+    },
+    {
+      "id": "gnd",
+      "name": "GND",
+      "type": "gnd",
+      "x": 5.23,
+      "y": 8.5,
+      "row": "header"
+    },
+    {
+      "id": "scl",
+      "name": "SCL",
+      "type": "i2c_scl",
+      "x": 7.77,
+      "y": 8.5,
+      "row": "header"
+    },
+    {
+      "id": "sda",
+      "name": "SDA",
+      "type": "i2c_sda",
+      "x": 10.31,
+      "y": 8.5,
+      "row": "header"
+    }
+  ],
+  "notes": "I2C address 0x76 or 0x77."
+}

@@ -1,0 +1,43 @@
+{
+  "id": "ir-receiver",
+  "name": "IR receiver (VS1838B)",
+  "category": "Sensors",
+  "tags": [
+    "ir",
+    "infrared"
+  ],
+  "onHand": false,
+  "face": "top",
+  "verified": false,
+  "source": "Common pinout, from memory. Check against the physical part. Seen from the front (the domed side), leads down.",
+  "width": 7.62,
+  "height": 6.35,
+  "color": "#23262b",
+  "pins": [
+    {
+      "id": "out",
+      "name": "OUT",
+      "type": "gpio",
+      "x": 1.27,
+      "y": 5,
+      "row": "leads"
+    },
+    {
+      "id": "gnd",
+      "name": "GND",
+      "type": "gnd",
+      "x": 3.81,
+      "y": 5,
+      "row": "leads"
+    },
+    {
+      "id": "vcc",
+      "name": "VCC",
+      "type": "3v3",
+      "x": 6.35,
+      "y": 5,
+      "row": "leads"
+    }
+  ],
+  "notes": "OUT idles high and pulses low. On a CYD, IO34 is taken by the light sensor, so it cannot be used for IR receive."
+}

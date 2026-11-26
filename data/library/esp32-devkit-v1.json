@@ -1,0 +1,879 @@
+{
+  "id": "esp32-devkit-v1",
+  "name": "ESP32 DevKit V1 (30-pin)",
+  "category": "Boards",
+  "tags": [
+    "esp32",
+    "wroom",
+    "doit"
+  ],
+  "onHand": true,
+  "face": "top",
+  "verified": false,
+  "source": "Common pinout, from memory. Check against the physical part. DOIT 30-pin layout, antenna at the top, USB at the bottom. Module pad order from Brian's vault note CYD WROOM ESP32 Chip Pinout (the same ESP32-WROOM-32); where the module sits on the board is approximate.",
+  "width": 27.94,
+  "height": 51.5,
+  "color": "#23262b",
+  "pins": [
+    {
+      "id": "en",
+      "name": "EN",
+      "type": "enable",
+      "x": 1.27,
+      "y": 7.97,
+      "row": "left"
+    },
+    {
+      "id": "vp",
+      "name": "VP",
+      "type": "analog",
+      "x": 1.27,
+      "y": 10.51,
+      "row": "left",
+      "gpio": 36,
+      "caps": [
+        "input_only"
+      ]
+    },
+    {
+      "id": "vn",
+      "name": "VN",
+      "type": "analog",
+      "x": 1.27,
+      "y": 13.05,
+      "row": "left",
+      "gpio": 39,
+      "caps": [
+        "input_only"
+      ]
+    },
+    {
+      "id": "d34",
+      "name": "D34",
+      "type": "gpio",
+      "x": 1.27,
+      "y": 15.59,
+      "row": "left",
+      "gpio": 34,
+      "caps": [
+        "input_only"
+      ]
+    },
+    {
+      "id": "d35",
+      "name": "D35",
+      "type": "gpio",
+      "x": 1.27,
+      "y": 18.13,
+      "row": "left",
+      "gpio": 35,
+      "caps": [
+        "input_only"
+      ]
+    },
+    {
+      "id": "d32",
+      "name": "D32",
+      "type": "gpio",
+      "x": 1.27,
+      "y": 20.67,
+      "row": "left",
+      "gpio": 32
+    },
+    {
+      "id": "d33",
+      "name": "D33",
+      "type": "gpio",
+      "x": 1.27,
+      "y": 23.21,
+      "row": "left",
+      "gpio": 33
+    },
+    {
+      "id": "d25",
+      "name": "D25",
+      "type": "gpio",
+      "x": 1.27,
+      "y": 25.75,
+      "row": "left",
+      "gpio": 25,
+      "caps": [
+        "adc2"
+      ]
+    },
+    {
+      "id": "d26",
+      "name": "D26",
+      "type": "gpio",
+      "x": 1.27,
+      "y": 28.29,
+      "row": "left",
+      "gpio": 26,
+      "caps": [
+        "adc2"
+      ]
+    },
+    {
+      "id": "d27",
+      "name": "D27",
+      "type": "gpio",
+      "x": 1.27,
+      "y": 30.83,
+      "row": "left",
+      "gpio": 27,
+      "caps": [
+        "adc2"
+      ]
+    },
+    {
+      "id": "d14",
+      "name": "D14",
+      "type": "gpio",
+      "x": 1.27,
+      "y": 33.37,
+      "row": "left",
+      "gpio": 14,
+      "caps": [
+        "adc2"
+      ]
+    },
+    {
+      "id": "d12",
+      "name": "D12",
+      "type": "gpio",
+      "x": 1.27,
+      "y": 35.91,
+      "row": "left",
+      "gpio": 12,
+      "caps": [
+        "adc2",
+        "strapping"
+      ]
+    },
+    {
+      "id": "d13",
+      "name": "D13",
+      "type": "gpio",
+      "x": 1.27,
+      "y": 38.45,
+      "row": "left",
+      "gpio": 13,
+      "caps": [
+        "adc2"
+      ]
+    },
+    {
+      "id": "gnd",
+      "name": "GND",
+      "type": "gnd",
+      "x": 1.27,
+      "y": 40.99,
+      "row": "left"
+    },
+    {
+      "id": "vin",
+      "name": "VIN",
+      "type": "5v",
+      "x": 1.27,
+      "y": 43.53,
+      "row": "left"
+    },
+    {
+      "id": "d23",
+      "name": "D23",
+      "type": "gpio",
+      "x": 26.67,
+      "y": 7.97,
+      "row": "right",
+      "gpio": 23,
+      "note": "VSPI MOSI by default"
+    },
+    {
+      "id": "d22",
+      "name": "D22",
+      "type": "gpio",
+      "x": 26.67,
+      "y": 10.51,
+      "row": "right",
+      "gpio": 22,
+      "note": "I2C SCL by default"
+    },
+    {
+      "id": "tx0",
+      "name": "TX0",
+      "type": "uart_tx",
+      "x": 26.67,
+      "y": 13.05,
+      "row": "right",
+      "gpio": 1,
+      "note": "USB serial"
+    },
+    {
+      "id": "rx0",
+      "name": "RX0",
+      "type": "uart_rx",
+      "x": 26.67,
+      "y": 15.59,
+      "row": "right",
+      "gpio": 3,
+      "note": "USB serial"
+    },
+    {
+      "id": "d21",
+      "name": "D21",
+      "type": "gpio",
+      "x": 26.67,
+      "y": 18.13,
+      "row": "right",
+      "gpio": 21,
+      "note": "I2C SDA by default"
+    },
+    {
+      "id": "d19",
+      "name": "D19",
+      "type": "gpio",
+      "x": 26.67,
+      "y": 20.67,
+      "row": "right",
+      "gpio": 19,
+      "note": "VSPI MISO by default"
+    },
+    {
+      "id": "d18",
+      "name": "D18",
+      "type": "gpio",
+      "x": 26.67,
+      "y": 23.21,
+      "row": "right",
+      "gpio": 18,
+      "note": "VSPI SCK by default"
+    },
+    {
+      "id": "d5",
+      "name": "D5",
+      "type": "gpio",
+      "x": 26.67,
+      "y": 25.75,
+      "row": "right",
+      "gpio": 5,
+      "caps": [
+        "strapping"
+      ],
+      "note": "VSPI CS by default"
+    },
+    {
+      "id": "tx2",
+      "name": "TX2",
+      "type": "gpio",
+      "x": 26.67,
+      "y": 28.29,
+      "row": "right",
+      "gpio": 17,
+      "note": "UART2 TX by default"
+    },
+    {
+      "id": "rx2",
+      "name": "RX2",
+      "type": "gpio",
+      "x": 26.67,
+      "y": 30.83,
+      "row": "right",
+      "gpio": 16,
+      "note": "UART2 RX by default"
+    },
+    {
+      "id": "d4",
+      "name": "D4",
+      "type": "gpio",
+      "x": 26.67,
+      "y": 33.37,
+      "row": "right",
+      "gpio": 4,
+      "caps": [
+        "adc2"
+      ]
+    },
+    {
+      "id": "d2",
+      "name": "D2",
+      "type": "gpio",
+      "x": 26.67,
+      "y": 35.91,
+      "row": "right",
+      "gpio": 2,
+      "caps": [
+        "adc2",
+        "strapping"
+      ],
+      "note": "onboard LED"
+    },
+    {
+      "id": "d15",
+      "name": "D15",
+      "type": "gpio",
+      "x": 26.67,
+      "y": 38.45,
+      "row": "right",
+      "gpio": 15,
+      "caps": [
+        "adc2",
+        "strapping"
+      ]
+    },
+    {
+      "id": "gnd-2",
+      "name": "GND",
+      "type": "gnd",
+      "x": 26.67,
+      "y": 40.99,
+      "row": "right"
+    },
+    {
+      "id": "3v3",
+      "name": "3V3",
+      "type": "3v3",
+      "x": 26.67,
+      "y": 43.53,
+      "row": "right"
+    },
+    {
+      "id": "m-gnd",
+      "name": "GND",
+      "type": "gnd",
+      "x": 5.47,
+      "y": 7.6,
+      "row": "module left"
+    },
+    {
+      "id": "m-3v3",
+      "name": "3V3",
+      "type": "3v3",
+      "x": 5.47,
+      "y": 8.87,
+      "row": "module left"
+    },
+    {
+      "id": "m-en",
+      "name": "EN",
+      "type": "enable",
+      "x": 5.47,
+      "y": 10.14,
+      "row": "module left",
+      "note": "EN button"
+    },
+    {
+      "id": "m-io36",
+      "name": "IO36",
+      "type": "gpio",
+      "x": 5.47,
+      "y": 11.41,
+      "row": "module left",
+      "gpio": 36,
+      "caps": [
+        "input_only"
+      ]
+    },
+    {
+      "id": "m-io39",
+      "name": "IO39",
+      "type": "gpio",
+      "x": 5.47,
+      "y": 12.68,
+      "row": "module left",
+      "gpio": 39,
+      "caps": [
+        "input_only"
+      ]
+    },
+    {
+      "id": "m-io34",
+      "name": "IO34",
+      "type": "gpio",
+      "x": 5.47,
+      "y": 13.95,
+      "row": "module left",
+      "gpio": 34,
+      "caps": [
+        "input_only"
+      ]
+    },
+    {
+      "id": "m-io35",
+      "name": "IO35",
+      "type": "gpio",
+      "x": 5.47,
+      "y": 15.22,
+      "row": "module left",
+      "gpio": 35,
+      "caps": [
+        "input_only"
+      ]
+    },
+    {
+      "id": "m-io32",
+      "name": "IO32",
+      "type": "gpio",
+      "x": 5.47,
+      "y": 16.49,
+      "row": "module left",
+      "gpio": 32
+    },
+    {
+      "id": "m-io33",
+      "name": "IO33",
+      "type": "gpio",
+      "x": 5.47,
+      "y": 17.76,
+      "row": "module left",
+      "gpio": 33
+    },
+    {
+      "id": "m-io25",
+      "name": "IO25",
+      "type": "gpio",
+      "x": 5.47,
+      "y": 19.03,
+      "row": "module left",
+      "gpio": 25,
+      "caps": [
+        "adc2"
+      ]
+    },
+    {
+      "id": "m-io26",
+      "name": "IO26",
+      "type": "gpio",
+      "x": 5.47,
+      "y": 20.3,
+      "row": "module left",
+      "gpio": 26,
+      "caps": [
+        "adc2"
+      ]
+    },
+    {
+      "id": "m-io27",
+      "name": "IO27",
+      "type": "gpio",
+      "x": 5.47,
+      "y": 21.57,
+      "row": "module left",
+      "gpio": 27,
+      "caps": [
+        "adc2"
+      ]
+    },
+    {
+      "id": "m-io14",
+      "name": "IO14",
+      "type": "gpio",
+      "x": 5.47,
+      "y": 22.84,
+      "row": "module left",
+      "gpio": 14,
+      "caps": [
+        "adc2"
+      ]
+    },
+    {
+      "id": "m-io12",
+      "name": "IO12",
+      "type": "gpio",
+      "x": 5.47,
+      "y": 24.11,
+      "row": "module left",
+      "gpio": 12,
+      "caps": [
+        "strapping",
+        "adc2"
+      ]
+    },
+    {
+      "id": "m-gnd-2",
+      "name": "GND",
+      "type": "gnd",
+      "x": 8.255,
+      "y": 25.6,
+      "row": "module bottom"
+    },
+    {
+      "id": "m-io13",
+      "name": "IO13",
+      "type": "gpio",
+      "x": 9.525,
+      "y": 25.6,
+      "row": "module bottom",
+      "gpio": 13,
+      "caps": [
+        "adc2"
+      ]
+    },
+    {
+      "id": "m-io9",
+      "name": "IO9",
+      "type": "other",
+      "x": 10.795,
+      "y": 25.6,
+      "row": "module bottom",
+      "gpio": 9,
+      "caps": [
+        "flash"
+      ],
+      "internalUse": "module flash, do not use"
+    },
+    {
+      "id": "m-io10",
+      "name": "IO10",
+      "type": "other",
+      "x": 12.065,
+      "y": 25.6,
+      "row": "module bottom",
+      "gpio": 10,
+      "caps": [
+        "flash"
+      ],
+      "internalUse": "module flash, do not use"
+    },
+    {
+      "id": "m-io11",
+      "name": "IO11",
+      "type": "other",
+      "x": 13.335,
+      "y": 25.6,
+      "row": "module bottom",
+      "gpio": 11,
+      "caps": [
+        "flash"
+      ],
+      "internalUse": "module flash, do not use"
+    },
+    {
+      "id": "m-io6",
+      "name": "IO6",
+      "type": "other",
+      "x": 14.605,
+      "y": 25.6,
+      "row": "module bottom",
+      "gpio": 6,
+      "caps": [
+        "flash"
+      ],
+      "internalUse": "module flash, do not use"
+    },
+    {
+      "id": "m-io7",
+      "name": "IO7",
+      "type": "other",
+      "x": 15.875,
+      "y": 25.6,
+      "row": "module bottom",
+      "gpio": 7,
+      "caps": [
+        "flash"
+      ],
+      "internalUse": "module flash, do not use"
+    },
+    {
+      "id": "m-io8",
+      "name": "IO8",
+      "type": "other",
+      "x": 17.145,
+      "y": 25.6,
+      "row": "module bottom",
+      "gpio": 8,
+      "caps": [
+        "flash"
+      ],
+      "internalUse": "module flash, do not use"
+    },
+    {
+      "id": "m-io15",
+      "name": "IO15",
+      "type": "gpio",
+      "x": 18.415,
+      "y": 25.6,
+      "row": "module bottom",
+      "gpio": 15,
+      "caps": [
+        "strapping",
+        "adc2"
+      ]
+    },
+    {
+      "id": "m-io2",
+      "name": "IO2",
+      "type": "gpio",
+      "x": 19.685,
+      "y": 25.6,
+      "row": "module bottom",
+      "gpio": 2,
+      "caps": [
+        "strapping",
+        "adc2"
+      ],
+      "internalUse": "onboard LED"
+    },
+    {
+      "id": "m-io0",
+      "name": "IO0",
+      "type": "gpio",
+      "x": 22.47,
+      "y": 24.11,
+      "row": "module right",
+      "gpio": 0,
+      "caps": [
+        "strapping",
+        "adc2"
+      ],
+      "internalUse": "BOOT button"
+    },
+    {
+      "id": "m-io4",
+      "name": "IO4",
+      "type": "gpio",
+      "x": 22.47,
+      "y": 22.84,
+      "row": "module right",
+      "gpio": 4,
+      "caps": [
+        "adc2"
+      ]
+    },
+    {
+      "id": "m-io16",
+      "name": "IO16",
+      "type": "gpio",
+      "x": 22.47,
+      "y": 21.57,
+      "row": "module right",
+      "gpio": 16
+    },
+    {
+      "id": "m-io17",
+      "name": "IO17",
+      "type": "gpio",
+      "x": 22.47,
+      "y": 20.3,
+      "row": "module right",
+      "gpio": 17
+    },
+    {
+      "id": "m-io5",
+      "name": "IO5",
+      "type": "gpio",
+      "x": 22.47,
+      "y": 19.03,
+      "row": "module right",
+      "gpio": 5,
+      "caps": [
+        "strapping"
+      ]
+    },
+    {
+      "id": "m-io18",
+      "name": "IO18",
+      "type": "gpio",
+      "x": 22.47,
+      "y": 17.76,
+      "row": "module right",
+      "gpio": 18
+    },
+    {
+      "id": "m-io19",
+      "name": "IO19",
+      "type": "gpio",
+      "x": 22.47,
+      "y": 16.49,
+      "row": "module right",
+      "gpio": 19
+    },
+    {
+      "id": "m-nc",
+      "name": "NC",
+      "type": "other",
+      "x": 22.47,
+      "y": 15.22,
+      "row": "module right"
+    },
+    {
+      "id": "m-io21",
+      "name": "IO21",
+      "type": "gpio",
+      "x": 22.47,
+      "y": 13.95,
+      "row": "module right",
+      "gpio": 21
+    },
+    {
+      "id": "m-io3",
+      "name": "IO3",
+      "type": "uart_rx",
+      "x": 22.47,
+      "y": 12.68,
+      "row": "module right",
+      "gpio": 3
+    },
+    {
+      "id": "m-io1",
+      "name": "IO1",
+      "type": "uart_tx",
+      "x": 22.47,
+      "y": 11.41,
+      "row": "module right",
+      "gpio": 1
+    },
+    {
+      "id": "m-io22",
+      "name": "IO22",
+      "type": "gpio",
+      "x": 22.47,
+      "y": 10.14,
+      "row": "module right",
+      "gpio": 22
+    },
+    {
+      "id": "m-io23",
+      "name": "IO23",
+      "type": "gpio",
+      "x": 22.47,
+      "y": 8.87,
+      "row": "module right",
+      "gpio": 23
+    },
+    {
+      "id": "m-gnd-3",
+      "name": "GND",
+      "type": "gnd",
+      "x": 22.47,
+      "y": 7.6,
+      "row": "module right"
+    }
+  ],
+  "links": [
+    [
+      "en",
+      "m-en"
+    ],
+    [
+      "vp",
+      "m-io36"
+    ],
+    [
+      "vn",
+      "m-io39"
+    ],
+    [
+      "d34",
+      "m-io34"
+    ],
+    [
+      "d35",
+      "m-io35"
+    ],
+    [
+      "d32",
+      "m-io32"
+    ],
+    [
+      "d33",
+      "m-io33"
+    ],
+    [
+      "d25",
+      "m-io25"
+    ],
+    [
+      "d26",
+      "m-io26"
+    ],
+    [
+      "d27",
+      "m-io27"
+    ],
+    [
+      "d14",
+      "m-io14"
+    ],
+    [
+      "d12",
+      "m-io12"
+    ],
+    [
+      "d13",
+      "m-io13"
+    ],
+    [
+      "gnd",
+      "gnd-2",
+      "m-gnd",
+      "m-gnd-2",
+      "m-gnd-3"
+    ],
+    [
+      "d23",
+      "m-io23"
+    ],
+    [
+      "d22",
+      "m-io22"
+    ],
+    [
+      "tx0",
+      "m-io1"
+    ],
+    [
+      "rx0",
+      "m-io3"
+    ],
+    [
+      "d21",
+      "m-io21"
+    ],
+    [
+      "d19",
+      "m-io19"
+    ],
+    [
+      "d18",
+      "m-io18"
+    ],
+    [
+      "d5",
+      "m-io5"
+    ],
+    [
+      "tx2",
+      "m-io17"
+    ],
+    [
+      "rx2",
+      "m-io16"
+    ],
+    [
+      "d4",
+      "m-io4"
+    ],
+    [
+      "d2",
+      "m-io2"
+    ],
+    [
+      "d15",
+      "m-io15"
+    ],
+    [
+      "3v3",
+      "m-3v3"
+    ]
+  ],
+  "outlines": [
+    {
+      "x": 4.97,
+      "y": 0.6,
+      "w": 18,
+      "h": 25.5,
+      "text": "ESP32-WROOM-32"
+    }
+  ],
+  "notes": "IO34 to IO39 are input only. IO0, IO2, IO5, IO12 and IO15 are strapping pins. IO18, IO19 and IO23 are the default VSPI bus; IO21 and IO22 the default I2C pins."
+}

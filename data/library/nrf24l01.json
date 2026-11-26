@@ -1,0 +1,84 @@
+{
+  "id": "nrf24l01",
+  "name": "nRF24L01+",
+  "category": "Radios",
+  "tags": [
+    "nrf24",
+    "2.4 ghz",
+    "spi"
+  ],
+  "onHand": true,
+  "face": "top",
+  "verified": false,
+  "source": "Brian's vault notes: NRF-24 (Generic) Pinout. Top view, chip side up, antenna away from you; pin 1 (GND) is the square pad.",
+  "width": 15.24,
+  "height": 29,
+  "color": "#23262b",
+  "pins": [
+    {
+      "id": "vcc",
+      "name": "VCC",
+      "type": "3v3",
+      "x": 3.81,
+      "y": 24,
+      "row": "antenna-side row"
+    },
+    {
+      "id": "csn",
+      "name": "CSN",
+      "type": "spi_cs",
+      "x": 6.35,
+      "y": 24,
+      "row": "antenna-side row"
+    },
+    {
+      "id": "mosi",
+      "name": "MOSI",
+      "type": "spi_mosi",
+      "x": 8.89,
+      "y": 24,
+      "row": "antenna-side row"
+    },
+    {
+      "id": "irq",
+      "name": "IRQ",
+      "type": "irq",
+      "x": 11.43,
+      "y": 24,
+      "row": "antenna-side row"
+    },
+    {
+      "id": "gnd",
+      "name": "GND",
+      "type": "gnd",
+      "x": 3.81,
+      "y": 26.54,
+      "row": "edge row"
+    },
+    {
+      "id": "ce",
+      "name": "CE",
+      "type": "enable",
+      "x": 6.35,
+      "y": 26.54,
+      "row": "edge row"
+    },
+    {
+      "id": "sck",
+      "name": "SCK",
+      "type": "spi_sck",
+      "x": 8.89,
+      "y": 26.54,
+      "row": "edge row"
+    },
+    {
+      "id": "miso",
+      "name": "MISO",
+      "type": "spi_miso",
+      "x": 11.43,
+      "y": 26.54,
+      "row": "edge row"
+    }
+  ],
+  "notes": "Supply 1.9 to 3.6 V: never connect 5 V to VCC. Signal pins accept 5 V logic. Put a 10 uF capacitor across VCC and GND near the module. The 2x4 header has no labels, so flip the part if you are looking at the pin side."
+}

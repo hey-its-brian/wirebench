@@ -1,0 +1,108 @@
+{
+  "id": "ebyte-e01-2g4m27sx",
+  "name": "Ebyte E01-2G4M27SX",
+  "category": "Radios",
+  "tags": [
+    "nrf24",
+    "2.4 ghz",
+    "spi",
+    "pa lna",
+    "ebyte",
+    "rf sentinel"
+  ],
+  "onHand": true,
+  "face": "top",
+  "verified": false,
+  "source": "Brian's vault notes: Ebyte E01 (nrf24) Pinout, read off the pinout image. Top view, shield up, pin 1 (VCC) at the right of the top edge. Pads are 1.27 mm pitch.",
+  "width": 14.5,
+  "height": 18,
+  "color": "#23262b",
+  "pins": [
+    {
+      "id": "gnd-8",
+      "name": "GND",
+      "type": "gnd",
+      "x": 2.805,
+      "y": 1,
+      "row": "top edge"
+    },
+    {
+      "id": "irq",
+      "name": "IRQ",
+      "type": "irq",
+      "x": 4.075,
+      "y": 1,
+      "row": "top edge"
+    },
+    {
+      "id": "miso",
+      "name": "MISO",
+      "type": "spi_miso",
+      "x": 5.345,
+      "y": 1,
+      "row": "top edge"
+    },
+    {
+      "id": "mosi",
+      "name": "MOSI",
+      "type": "spi_mosi",
+      "x": 6.615,
+      "y": 1,
+      "row": "top edge"
+    },
+    {
+      "id": "sck",
+      "name": "SCK",
+      "type": "spi_sck",
+      "x": 7.885,
+      "y": 1,
+      "row": "top edge"
+    },
+    {
+      "id": "csn",
+      "name": "CSN",
+      "type": "spi_cs",
+      "x": 9.155,
+      "y": 1,
+      "row": "top edge"
+    },
+    {
+      "id": "ce",
+      "name": "CE",
+      "type": "enable",
+      "x": 10.425,
+      "y": 1,
+      "row": "top edge"
+    },
+    {
+      "id": "vcc",
+      "name": "VCC",
+      "type": "3v3",
+      "x": 11.695,
+      "y": 1,
+      "row": "top edge"
+    },
+    {
+      "id": "gnd-9",
+      "name": "GND",
+      "type": "gnd",
+      "x": 0.8,
+      "y": 9
+    },
+    {
+      "id": "gnd-10",
+      "name": "GND",
+      "type": "gnd",
+      "x": 13.7,
+      "y": 9
+    }
+  ],
+  "links": [
+    [
+      "gnd-8",
+      "gnd-9",
+      "gnd-10"
+    ]
+  ],
+  "notes": "Must run from its own 3.3 V buck supply, not a dev board rail: a CYD cannot supply enough current for it. Supply 2.3 to 3.6 V. IPEX antenna connector at the bottom left."
+}

@@ -1,0 +1,67 @@
+{
+  "id": "microsd-breakout",
+  "name": "microSD breakout (SPI)",
+  "category": "Power and passives",
+  "tags": [
+    "storage",
+    "spi"
+  ],
+  "onHand": false,
+  "face": "top",
+  "verified": false,
+  "source": "Common pinout, from memory. Check against the physical part. Common six-pin order; boards vary, so read the silkscreen.",
+  "width": 18,
+  "height": 24,
+  "color": "#1c4f9c",
+  "pins": [
+    {
+      "id": "gnd",
+      "name": "GND",
+      "type": "gnd",
+      "x": 2.65,
+      "y": 22,
+      "row": "header"
+    },
+    {
+      "id": "vcc",
+      "name": "VCC",
+      "type": "3v3",
+      "x": 5.19,
+      "y": 22,
+      "row": "header"
+    },
+    {
+      "id": "miso",
+      "name": "MISO",
+      "type": "spi_miso",
+      "x": 7.73,
+      "y": 22,
+      "row": "header"
+    },
+    {
+      "id": "mosi",
+      "name": "MOSI",
+      "type": "spi_mosi",
+      "x": 10.27,
+      "y": 22,
+      "row": "header"
+    },
+    {
+      "id": "sck",
+      "name": "SCK",
+      "type": "spi_sck",
+      "x": 12.81,
+      "y": 22,
+      "row": "header"
+    },
+    {
+      "id": "cs",
+      "name": "CS",
+      "type": "spi_cs",
+      "x": 15.35,
+      "y": 22,
+      "row": "header"
+    }
+  ],
+  "notes": "Boards with a regulator and level shifter want 5 V on VCC; bare ones want 3.3 V."
+}

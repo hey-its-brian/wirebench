@@ -1,0 +1,34 @@
+{
+  "id": "lipo-battery",
+  "name": "LiPo battery, 1 cell",
+  "category": "Power and passives",
+  "tags": [
+    "power",
+    "battery",
+    "lipo"
+  ],
+  "onHand": false,
+  "face": "top",
+  "verified": false,
+  "source": "Generic two-lead part. Check the polarity of your connector: JST leads are not wired the same way by every seller.",
+  "width": 30,
+  "height": 20,
+  "color": "#5b6068",
+  "pins": [
+    {
+      "id": "pos",
+      "name": "+",
+      "type": "vbat",
+      "x": 28.4,
+      "y": 7.46
+    },
+    {
+      "id": "neg",
+      "name": "-",
+      "type": "gnd",
+      "x": 28.4,
+      "y": 12.54
+    }
+  ],
+  "notes": "3.7 V nominal, 4.2 V full. Not a 3.3 V or 5 V supply: feed a board through its battery input or a regulator."
+}

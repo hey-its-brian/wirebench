@@ -1,0 +1,33 @@
+{
+  "id": "capacitor-electrolytic",
+  "name": "Capacitor (electrolytic)",
+  "category": "Power and passives",
+  "tags": [
+    "passive",
+    "polarised"
+  ],
+  "onHand": false,
+  "face": "top",
+  "verified": false,
+  "source": "Generic two-lead part.",
+  "width": 5.08,
+  "height": 5.08,
+  "color": "#5b6068",
+  "pins": [
+    {
+      "id": "pos",
+      "name": "+",
+      "type": "3v3",
+      "x": 1.27,
+      "y": 2.54
+    },
+    {
+      "id": "neg",
+      "name": "-",
+      "type": "gnd",
+      "x": 3.81,
+      "y": 2.54
+    }
+  ],
+  "notes": "Polarised: the stripe marks the negative lead. A 10 uF one across VCC and GND steadies an nRF24 module."
+}

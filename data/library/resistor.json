@@ -1,0 +1,32 @@
+{
+  "id": "resistor",
+  "name": "Resistor",
+  "category": "Power and passives",
+  "tags": [
+    "passive"
+  ],
+  "onHand": true,
+  "face": "top",
+  "verified": false,
+  "source": "Generic two-lead part.",
+  "width": 10.16,
+  "height": 2.54,
+  "color": "#b89b6a",
+  "pins": [
+    {
+      "id": "a",
+      "name": "1",
+      "type": "other",
+      "x": 1.27,
+      "y": 1.27
+    },
+    {
+      "id": "b",
+      "name": "2",
+      "type": "other",
+      "x": 8.89,
+      "y": 1.27
+    }
+  ],
+  "notes": "Give it a label with its value, for example 330R or 10k."
+}

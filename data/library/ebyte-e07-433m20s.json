@@ -1,0 +1,161 @@
+{
+  "id": "ebyte-e07-433m20s",
+  "name": "Ebyte E07-433M20S",
+  "category": "Radios",
+  "tags": [
+    "cc1101",
+    "sub-ghz",
+    "spi",
+    "pa lna",
+    "ebyte",
+    "rf sentinel"
+  ],
+  "onHand": true,
+  "face": "top",
+  "verified": false,
+  "source": "Brian's vault notes: RF-Modules E07-433M20S pinout drawing. Top view, shield up, pin 1 (GND) at the right of the top edge. Board size, pad pitch and the left to right order of the bottom pads are approximate.",
+  "width": 20,
+  "height": 14,
+  "color": "#23262b",
+  "pins": [
+    {
+      "id": "gnd-12",
+      "name": "GND",
+      "type": "gnd",
+      "x": 3.015,
+      "y": 1,
+      "row": "top edge"
+    },
+    {
+      "id": "vcc",
+      "name": "VCC",
+      "type": "3v3",
+      "x": 4.285,
+      "y": 1,
+      "row": "top edge"
+    },
+    {
+      "id": "nc",
+      "name": "NC",
+      "type": "other",
+      "x": 5.555,
+      "y": 1,
+      "row": "top edge"
+    },
+    {
+      "id": "rx-en",
+      "name": "RX_EN",
+      "type": "enable",
+      "x": 6.825,
+      "y": 1,
+      "row": "top edge"
+    },
+    {
+      "id": "tx-en",
+      "name": "TX_EN",
+      "type": "enable",
+      "x": 8.095,
+      "y": 1,
+      "row": "top edge"
+    },
+    {
+      "id": "csn",
+      "name": "CSN",
+      "type": "spi_cs",
+      "x": 9.365,
+      "y": 1,
+      "row": "top edge"
+    },
+    {
+      "id": "gdo0",
+      "name": "GDO0",
+      "type": "irq",
+      "x": 10.635,
+      "y": 1,
+      "row": "top edge"
+    },
+    {
+      "id": "gdo2",
+      "name": "GDO2",
+      "type": "irq",
+      "x": 11.905,
+      "y": 1,
+      "row": "top edge"
+    },
+    {
+      "id": "miso",
+      "name": "MISO",
+      "type": "spi_miso",
+      "x": 13.175,
+      "y": 1,
+      "row": "top edge",
+      "note": "also GDO1"
+    },
+    {
+      "id": "sck",
+      "name": "SCK",
+      "type": "spi_sck",
+      "x": 14.445,
+      "y": 1,
+      "row": "top edge"
+    },
+    {
+      "id": "mosi",
+      "name": "MOSI",
+      "type": "spi_mosi",
+      "x": 15.715,
+      "y": 1,
+      "row": "top edge"
+    },
+    {
+      "id": "gnd-1",
+      "name": "GND",
+      "type": "gnd",
+      "x": 16.985,
+      "y": 1,
+      "row": "top edge"
+    },
+    {
+      "id": "ant",
+      "name": "ANT",
+      "type": "other",
+      "x": 3.015,
+      "y": 13,
+      "row": "bottom edge"
+    },
+    {
+      "id": "gnd-14",
+      "name": "GND",
+      "type": "gnd",
+      "x": 4.285,
+      "y": 13,
+      "row": "bottom edge"
+    },
+    {
+      "id": "gnd-15",
+      "name": "GND",
+      "type": "gnd",
+      "x": 5.555,
+      "y": 13,
+      "row": "bottom edge"
+    },
+    {
+      "id": "gnd-16",
+      "name": "GND",
+      "type": "gnd",
+      "x": 6.825,
+      "y": 13,
+      "row": "bottom edge"
+    }
+  ],
+  "links": [
+    [
+      "gnd-12",
+      "gnd-1",
+      "gnd-14",
+      "gnd-15",
+      "gnd-16"
+    ]
+  ],
+  "notes": "CC1101 with a power amplifier. TX_EN and RX_EN switch the amplifier. Run it from an independent 3.3 V supply."
+}

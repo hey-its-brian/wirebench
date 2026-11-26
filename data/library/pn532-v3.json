@@ -1,0 +1,139 @@
+{
+  "id": "pn532-v3",
+  "name": "PN532 NFC module V3",
+  "category": "Radios",
+  "tags": [
+    "nfc",
+    "rfid",
+    "spi",
+    "i2c"
+  ],
+  "onHand": false,
+  "face": "top",
+  "verified": false,
+  "source": "Common pinout, from memory. Check against the physical part. Brian's PN532 note warns that the silkscreen differs by revision, so check the header order on your board.",
+  "width": 43,
+  "height": 41,
+  "color": "#a8271f",
+  "pins": [
+    {
+      "id": "sck",
+      "name": "SCK",
+      "type": "spi_sck",
+      "x": 2.5,
+      "y": 11.6,
+      "row": "SPI header"
+    },
+    {
+      "id": "miso",
+      "name": "MISO",
+      "type": "spi_miso",
+      "x": 2.5,
+      "y": 14.14,
+      "row": "SPI header"
+    },
+    {
+      "id": "mosi",
+      "name": "MOSI",
+      "type": "spi_mosi",
+      "x": 2.5,
+      "y": 16.68,
+      "row": "SPI header"
+    },
+    {
+      "id": "ss",
+      "name": "SS",
+      "type": "spi_cs",
+      "x": 2.5,
+      "y": 19.22,
+      "row": "SPI header"
+    },
+    {
+      "id": "vcc-spi",
+      "name": "VCC",
+      "type": "3v3",
+      "x": 2.5,
+      "y": 21.76,
+      "row": "SPI header"
+    },
+    {
+      "id": "gnd-spi",
+      "name": "GND",
+      "type": "gnd",
+      "x": 2.5,
+      "y": 24.3,
+      "row": "SPI header"
+    },
+    {
+      "id": "irq",
+      "name": "IRQ",
+      "type": "irq",
+      "x": 2.5,
+      "y": 26.84,
+      "row": "SPI header"
+    },
+    {
+      "id": "rsto",
+      "name": "RSTO",
+      "type": "enable",
+      "x": 2.5,
+      "y": 29.38,
+      "row": "SPI header"
+    },
+    {
+      "id": "gnd-i2c",
+      "name": "GND",
+      "type": "gnd",
+      "x": 40.5,
+      "y": 16.7,
+      "row": "I2C header"
+    },
+    {
+      "id": "vcc-i2c",
+      "name": "VCC",
+      "type": "3v3",
+      "x": 40.5,
+      "y": 19.24,
+      "row": "I2C header"
+    },
+    {
+      "id": "sda",
+      "name": "SDA",
+      "type": "i2c_sda",
+      "x": 40.5,
+      "y": 21.78,
+      "row": "I2C header"
+    },
+    {
+      "id": "scl",
+      "name": "SCL",
+      "type": "i2c_scl",
+      "x": 40.5,
+      "y": 24.32,
+      "row": "I2C header"
+    }
+  ],
+  "links": [
+    [
+      "gnd-spi",
+      "gnd-i2c"
+    ],
+    [
+      "vcc-spi",
+      "vcc-i2c"
+    ]
+  ],
+  "captions": [
+    {
+      "text": "SPI",
+      "x": 6.5,
+      "y": 8.4
+    },
+    {
+      "text": "I2C",
+      "x": 33,
+      "y": 13.5
+    }
+  ],
+  "notes": "DIP switches pick the bus. SPI: switch 1 OFF, switch 2 ON. I2C: switch 1 ON, switch 2 OFF. HSU: both OFF. HaleHound drives it over SPI; Bruce uses I2C."
+}

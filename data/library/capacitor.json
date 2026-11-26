@@ -1,0 +1,32 @@
+{
+  "id": "capacitor",
+  "name": "Capacitor (ceramic)",
+  "category": "Power and passives",
+  "tags": [
+    "passive"
+  ],
+  "onHand": true,
+  "face": "top",
+  "verified": false,
+  "source": "Generic two-lead part.",
+  "width": 5.08,
+  "height": 3.81,
+  "color": "#b89b6a",
+  "pins": [
+    {
+      "id": "a",
+      "name": "1",
+      "type": "other",
+      "x": 1.27,
+      "y": 1.905
+    },
+    {
+      "id": "b",
+      "name": "2",
+      "type": "other",
+      "x": 3.81,
+      "y": 1.905
+    }
+  ],
+  "notes": "Not polarised. Give it a label with its value, for example 100 nF."
+}

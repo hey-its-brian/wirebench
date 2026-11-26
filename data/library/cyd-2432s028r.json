@@ -1,0 +1,791 @@
+{
+  "id": "cyd-2432s028r",
+  "name": "CYD 2.8 inch (ESP32-2432S028R)",
+  "category": "Boards",
+  "tags": [
+    "esp32",
+    "cyd",
+    "cheap yellow display"
+  ],
+  "onHand": true,
+  "face": "bottom",
+  "verified": false,
+  "source": "Brian's vault notes (Cheap Yellow Display, HaleHound wiring) for the connectors, and Brian's vault note CYD WROOM ESP32 Chip Pinout for all 38 module pads and what the board uses each for. Positions here are a schematic layout, not the real board: the connectors are 1.25 mm JST and the module sits elsewhere. Upload a photo of the back and place the pins to fix that.",
+  "width": 86,
+  "height": 50,
+  "color": "#d1ad1f",
+  "pins": [
+    {
+      "id": "p1-vin",
+      "name": "VIN",
+      "type": "5v",
+      "x": 6,
+      "y": 44,
+      "row": "P1"
+    },
+    {
+      "id": "p1-tx",
+      "name": "TX",
+      "type": "uart_tx",
+      "x": 8.54,
+      "y": 44,
+      "row": "P1",
+      "gpio": 1,
+      "note": "USB serial"
+    },
+    {
+      "id": "p1-rx",
+      "name": "RX",
+      "type": "uart_rx",
+      "x": 11.08,
+      "y": 44,
+      "row": "P1",
+      "gpio": 3,
+      "note": "USB serial"
+    },
+    {
+      "id": "p1-gnd",
+      "name": "GND",
+      "type": "gnd",
+      "x": 13.62,
+      "y": 44,
+      "row": "P1"
+    },
+    {
+      "id": "p3-gnd",
+      "name": "GND",
+      "type": "gnd",
+      "x": 24,
+      "y": 44,
+      "row": "P3"
+    },
+    {
+      "id": "p3-io35",
+      "name": "IO35",
+      "type": "gpio",
+      "x": 26.54,
+      "y": 44,
+      "row": "P3",
+      "gpio": 35,
+      "caps": [
+        "input_only"
+      ]
+    },
+    {
+      "id": "p3-io22",
+      "name": "IO22",
+      "type": "gpio",
+      "x": 29.08,
+      "y": 44,
+      "row": "P3",
+      "gpio": 22
+    },
+    {
+      "id": "p3-io21",
+      "name": "IO21",
+      "type": "gpio",
+      "x": 31.62,
+      "y": 44,
+      "row": "P3",
+      "gpio": 21,
+      "internalUse": "display backlight"
+    },
+    {
+      "id": "cn1-gnd",
+      "name": "GND",
+      "type": "gnd",
+      "x": 42,
+      "y": 44,
+      "row": "CN1"
+    },
+    {
+      "id": "cn1-io22",
+      "name": "IO22",
+      "type": "gpio",
+      "x": 44.54,
+      "y": 44,
+      "row": "CN1",
+      "gpio": 22
+    },
+    {
+      "id": "cn1-io27",
+      "name": "IO27",
+      "type": "gpio",
+      "x": 47.08,
+      "y": 44,
+      "row": "CN1",
+      "gpio": 27
+    },
+    {
+      "id": "cn1-3v3",
+      "name": "3V3",
+      "type": "3v3",
+      "x": 49.62,
+      "y": 44,
+      "row": "CN1"
+    },
+    {
+      "id": "tap-io4",
+      "name": "IO4",
+      "type": "gpio",
+      "x": 6,
+      "y": 12,
+      "row": "RGB LED taps",
+      "gpio": 4,
+      "internalUse": "RGB LED red"
+    },
+    {
+      "id": "tap-io16",
+      "name": "IO16",
+      "type": "gpio",
+      "x": 13.62,
+      "y": 12,
+      "row": "RGB LED taps",
+      "gpio": 16,
+      "internalUse": "RGB LED green"
+    },
+    {
+      "id": "tap-io17",
+      "name": "IO17",
+      "type": "gpio",
+      "x": 21.24,
+      "y": 12,
+      "row": "RGB LED taps",
+      "gpio": 17,
+      "internalUse": "RGB LED blue"
+    },
+    {
+      "id": "tap-io5",
+      "name": "IO5",
+      "type": "spi_cs",
+      "x": 32,
+      "y": 12,
+      "row": "SD slot taps",
+      "gpio": 5,
+      "internalUse": "SD card CS",
+      "caps": [
+        "strapping"
+      ]
+    },
+    {
+      "id": "tap-io18",
+      "name": "IO18",
+      "type": "spi_sck",
+      "x": 39.62,
+      "y": 12,
+      "row": "SD slot taps",
+      "gpio": 18,
+      "internalUse": "SD card SCK (shared bus)"
+    },
+    {
+      "id": "tap-io23",
+      "name": "IO23",
+      "type": "spi_mosi",
+      "x": 47.24,
+      "y": 12,
+      "row": "SD slot taps",
+      "gpio": 23,
+      "internalUse": "SD card MOSI (shared bus)"
+    },
+    {
+      "id": "tap-io19",
+      "name": "IO19",
+      "type": "spi_miso",
+      "x": 54.86,
+      "y": 12,
+      "row": "SD slot taps",
+      "gpio": 19,
+      "internalUse": "SD card MISO (shared bus)"
+    },
+    {
+      "id": "tap-io26",
+      "name": "IO26",
+      "type": "gpio",
+      "x": 6,
+      "y": 27,
+      "row": "Other taps",
+      "gpio": 26,
+      "internalUse": "speaker amplifier"
+    },
+    {
+      "id": "tap-io34",
+      "name": "IO34",
+      "type": "gpio",
+      "x": 13.62,
+      "y": 27,
+      "row": "Other taps",
+      "gpio": 34,
+      "internalUse": "light sensor (LDR)",
+      "caps": [
+        "input_only"
+      ]
+    },
+    {
+      "id": "tap-io0",
+      "name": "IO0",
+      "type": "gpio",
+      "x": 21.24,
+      "y": 27,
+      "row": "Other taps",
+      "gpio": 0,
+      "internalUse": "BOOT button",
+      "caps": [
+        "strapping"
+      ]
+    },
+    {
+      "id": "m-gnd",
+      "name": "GND",
+      "type": "gnd",
+      "x": 63.5,
+      "y": 10,
+      "row": "module left"
+    },
+    {
+      "id": "m-3v3",
+      "name": "3V3",
+      "type": "3v3",
+      "x": 63.5,
+      "y": 11.27,
+      "row": "module left"
+    },
+    {
+      "id": "m-en",
+      "name": "EN",
+      "type": "enable",
+      "x": 63.5,
+      "y": 12.54,
+      "row": "module left",
+      "note": "RST button"
+    },
+    {
+      "id": "m-io36",
+      "name": "IO36",
+      "type": "gpio",
+      "x": 63.5,
+      "y": 13.81,
+      "row": "module left",
+      "gpio": 36,
+      "caps": [
+        "input_only"
+      ],
+      "internalUse": "touch IRQ"
+    },
+    {
+      "id": "m-io39",
+      "name": "IO39",
+      "type": "gpio",
+      "x": 63.5,
+      "y": 15.08,
+      "row": "module left",
+      "gpio": 39,
+      "caps": [
+        "input_only"
+      ],
+      "internalUse": "touch MISO"
+    },
+    {
+      "id": "m-io34",
+      "name": "IO34",
+      "type": "gpio",
+      "x": 63.5,
+      "y": 16.35,
+      "row": "module left",
+      "gpio": 34,
+      "caps": [
+        "input_only"
+      ],
+      "internalUse": "light sensor (LDR)"
+    },
+    {
+      "id": "m-io35",
+      "name": "IO35",
+      "type": "gpio",
+      "x": 63.5,
+      "y": 17.62,
+      "row": "module left",
+      "gpio": 35,
+      "caps": [
+        "input_only"
+      ]
+    },
+    {
+      "id": "m-io32",
+      "name": "IO32",
+      "type": "gpio",
+      "x": 63.5,
+      "y": 18.89,
+      "row": "module left",
+      "gpio": 32,
+      "internalUse": "touch MOSI"
+    },
+    {
+      "id": "m-io33",
+      "name": "IO33",
+      "type": "gpio",
+      "x": 63.5,
+      "y": 20.16,
+      "row": "module left",
+      "gpio": 33,
+      "internalUse": "touch CS"
+    },
+    {
+      "id": "m-io25",
+      "name": "IO25",
+      "type": "gpio",
+      "x": 63.5,
+      "y": 21.43,
+      "row": "module left",
+      "gpio": 25,
+      "caps": [
+        "adc2"
+      ],
+      "internalUse": "touch CLK"
+    },
+    {
+      "id": "m-io26",
+      "name": "IO26",
+      "type": "gpio",
+      "x": 63.5,
+      "y": 22.7,
+      "row": "module left",
+      "gpio": 26,
+      "caps": [
+        "adc2"
+      ],
+      "internalUse": "speaker amplifier"
+    },
+    {
+      "id": "m-io27",
+      "name": "IO27",
+      "type": "gpio",
+      "x": 63.5,
+      "y": 23.97,
+      "row": "module left",
+      "gpio": 27,
+      "caps": [
+        "adc2"
+      ]
+    },
+    {
+      "id": "m-io14",
+      "name": "IO14",
+      "type": "gpio",
+      "x": 63.5,
+      "y": 25.24,
+      "row": "module left",
+      "gpio": 14,
+      "caps": [
+        "adc2"
+      ],
+      "internalUse": "display SCK"
+    },
+    {
+      "id": "m-io12",
+      "name": "IO12",
+      "type": "gpio",
+      "x": 63.5,
+      "y": 26.51,
+      "row": "module left",
+      "gpio": 12,
+      "caps": [
+        "strapping",
+        "adc2"
+      ],
+      "internalUse": "display MISO"
+    },
+    {
+      "id": "m-gnd-2",
+      "name": "GND",
+      "type": "gnd",
+      "x": 66.285,
+      "y": 28,
+      "row": "module bottom"
+    },
+    {
+      "id": "m-io13",
+      "name": "IO13",
+      "type": "gpio",
+      "x": 67.555,
+      "y": 28,
+      "row": "module bottom",
+      "gpio": 13,
+      "caps": [
+        "adc2"
+      ],
+      "internalUse": "display MOSI"
+    },
+    {
+      "id": "m-io9",
+      "name": "IO9",
+      "type": "other",
+      "x": 68.825,
+      "y": 28,
+      "row": "module bottom",
+      "gpio": 9,
+      "caps": [
+        "flash"
+      ],
+      "internalUse": "module flash, do not use"
+    },
+    {
+      "id": "m-io10",
+      "name": "IO10",
+      "type": "other",
+      "x": 70.095,
+      "y": 28,
+      "row": "module bottom",
+      "gpio": 10,
+      "caps": [
+        "flash"
+      ],
+      "internalUse": "module flash, do not use"
+    },
+    {
+      "id": "m-io11",
+      "name": "IO11",
+      "type": "other",
+      "x": 71.365,
+      "y": 28,
+      "row": "module bottom",
+      "gpio": 11,
+      "caps": [
+        "flash"
+      ],
+      "internalUse": "module flash, do not use"
+    },
+    {
+      "id": "m-io6",
+      "name": "IO6",
+      "type": "other",
+      "x": 72.635,
+      "y": 28,
+      "row": "module bottom",
+      "gpio": 6,
+      "caps": [
+        "flash"
+      ],
+      "internalUse": "module flash, do not use"
+    },
+    {
+      "id": "m-io7",
+      "name": "IO7",
+      "type": "other",
+      "x": 73.905,
+      "y": 28,
+      "row": "module bottom",
+      "gpio": 7,
+      "caps": [
+        "flash"
+      ],
+      "internalUse": "module flash, do not use"
+    },
+    {
+      "id": "m-io8",
+      "name": "IO8",
+      "type": "other",
+      "x": 75.175,
+      "y": 28,
+      "row": "module bottom",
+      "gpio": 8,
+      "caps": [
+        "flash"
+      ],
+      "internalUse": "module flash, do not use"
+    },
+    {
+      "id": "m-io15",
+      "name": "IO15",
+      "type": "gpio",
+      "x": 76.445,
+      "y": 28,
+      "row": "module bottom",
+      "gpio": 15,
+      "caps": [
+        "strapping",
+        "adc2"
+      ],
+      "internalUse": "display CS"
+    },
+    {
+      "id": "m-io2",
+      "name": "IO2",
+      "type": "gpio",
+      "x": 77.715,
+      "y": 28,
+      "row": "module bottom",
+      "gpio": 2,
+      "caps": [
+        "strapping",
+        "adc2"
+      ],
+      "internalUse": "display DC"
+    },
+    {
+      "id": "m-io0",
+      "name": "IO0",
+      "type": "gpio",
+      "x": 80.5,
+      "y": 26.51,
+      "row": "module right",
+      "gpio": 0,
+      "caps": [
+        "strapping",
+        "adc2"
+      ],
+      "internalUse": "BOOT button"
+    },
+    {
+      "id": "m-io4",
+      "name": "IO4",
+      "type": "gpio",
+      "x": 80.5,
+      "y": 25.24,
+      "row": "module right",
+      "gpio": 4,
+      "caps": [
+        "adc2"
+      ],
+      "internalUse": "RGB LED red"
+    },
+    {
+      "id": "m-io16",
+      "name": "IO16",
+      "type": "gpio",
+      "x": 80.5,
+      "y": 23.97,
+      "row": "module right",
+      "gpio": 16,
+      "internalUse": "RGB LED green"
+    },
+    {
+      "id": "m-io17",
+      "name": "IO17",
+      "type": "gpio",
+      "x": 80.5,
+      "y": 22.7,
+      "row": "module right",
+      "gpio": 17,
+      "internalUse": "RGB LED blue"
+    },
+    {
+      "id": "m-io5",
+      "name": "IO5",
+      "type": "gpio",
+      "x": 80.5,
+      "y": 21.43,
+      "row": "module right",
+      "gpio": 5,
+      "caps": [
+        "strapping"
+      ],
+      "internalUse": "SD card CS"
+    },
+    {
+      "id": "m-io18",
+      "name": "IO18",
+      "type": "gpio",
+      "x": 80.5,
+      "y": 20.16,
+      "row": "module right",
+      "gpio": 18,
+      "internalUse": "SD card SCK (shared bus)"
+    },
+    {
+      "id": "m-io19",
+      "name": "IO19",
+      "type": "gpio",
+      "x": 80.5,
+      "y": 18.89,
+      "row": "module right",
+      "gpio": 19,
+      "internalUse": "SD card MISO (shared bus)"
+    },
+    {
+      "id": "m-nc",
+      "name": "NC",
+      "type": "other",
+      "x": 80.5,
+      "y": 17.62,
+      "row": "module right"
+    },
+    {
+      "id": "m-io21",
+      "name": "IO21",
+      "type": "gpio",
+      "x": 80.5,
+      "y": 16.35,
+      "row": "module right",
+      "gpio": 21,
+      "internalUse": "display backlight"
+    },
+    {
+      "id": "m-io3",
+      "name": "IO3",
+      "type": "uart_rx",
+      "x": 80.5,
+      "y": 15.08,
+      "row": "module right",
+      "gpio": 3,
+      "internalUse": "USB serial RX"
+    },
+    {
+      "id": "m-io1",
+      "name": "IO1",
+      "type": "uart_tx",
+      "x": 80.5,
+      "y": 13.81,
+      "row": "module right",
+      "gpio": 1,
+      "internalUse": "USB serial TX"
+    },
+    {
+      "id": "m-io22",
+      "name": "IO22",
+      "type": "gpio",
+      "x": 80.5,
+      "y": 12.54,
+      "row": "module right",
+      "gpio": 22
+    },
+    {
+      "id": "m-io23",
+      "name": "IO23",
+      "type": "gpio",
+      "x": 80.5,
+      "y": 11.27,
+      "row": "module right",
+      "gpio": 23,
+      "internalUse": "SD card MOSI (shared bus)"
+    },
+    {
+      "id": "m-gnd-3",
+      "name": "GND",
+      "type": "gnd",
+      "x": 80.5,
+      "y": 10,
+      "row": "module right"
+    }
+  ],
+  "links": [
+    [
+      "p1-tx",
+      "m-io1"
+    ],
+    [
+      "p1-rx",
+      "m-io3"
+    ],
+    [
+      "p1-gnd",
+      "p3-gnd",
+      "cn1-gnd",
+      "m-gnd",
+      "m-gnd-2",
+      "m-gnd-3"
+    ],
+    [
+      "p3-io35",
+      "m-io35"
+    ],
+    [
+      "p3-io22",
+      "cn1-io22",
+      "m-io22"
+    ],
+    [
+      "p3-io21",
+      "m-io21"
+    ],
+    [
+      "cn1-io27",
+      "m-io27"
+    ],
+    [
+      "cn1-3v3",
+      "m-3v3"
+    ],
+    [
+      "tap-io4",
+      "m-io4"
+    ],
+    [
+      "tap-io16",
+      "m-io16"
+    ],
+    [
+      "tap-io17",
+      "m-io17"
+    ],
+    [
+      "tap-io5",
+      "m-io5"
+    ],
+    [
+      "tap-io18",
+      "m-io18"
+    ],
+    [
+      "tap-io23",
+      "m-io23"
+    ],
+    [
+      "tap-io19",
+      "m-io19"
+    ],
+    [
+      "tap-io26",
+      "m-io26"
+    ],
+    [
+      "tap-io34",
+      "m-io34"
+    ],
+    [
+      "tap-io0",
+      "m-io0"
+    ]
+  ],
+  "captions": [
+    {
+      "text": "P1",
+      "x": 4.7,
+      "y": 47.4
+    },
+    {
+      "text": "P3",
+      "x": 22.7,
+      "y": 47.4
+    },
+    {
+      "text": "CN1",
+      "x": 40.7,
+      "y": 47.4
+    },
+    {
+      "text": "RGB LED taps",
+      "x": 4.7,
+      "y": 8.2
+    },
+    {
+      "text": "SD slot taps",
+      "x": 30.7,
+      "y": 8.2
+    },
+    {
+      "text": "Other taps",
+      "x": 4.7,
+      "y": 23.2
+    }
+  ],
+  "outlines": [
+    {
+      "x": 63,
+      "y": 3,
+      "w": 18,
+      "h": 25.5,
+      "text": "ESP32-WROOM-32"
+    }
+  ],
+  "notes": "Back view. P1, P3 and CN1 are the JST connectors. The ESP32-WROOM-32 module is drawn with every pad, so you can wire straight to the chip. The tap pins are easier solder points for the same signals (RGB LED pads, SD slot legs, speaker) and are joined to their module pads. Free pins: IO22, IO27 and IO35 (input only). IO21 is on P3 but drives the backlight. IO6 to IO11 belong to the module flash: do not use them. IO12 is a boot strap pin and must not be high at reset. The RGB LED is active low."
+}

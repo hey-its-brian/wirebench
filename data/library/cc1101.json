@@ -1,0 +1,85 @@
+{
+  "id": "cc1101",
+  "name": "CC1101 module (2x4 header)",
+  "category": "Radios",
+  "tags": [
+    "cc1101",
+    "sub-ghz",
+    "spi"
+  ],
+  "onHand": true,
+  "face": "top",
+  "verified": false,
+  "source": "Brian's vault notes: CC1101 (Generic) Pinout, read off the pinout image. Top view, chip side up, antenna away from you; pin 1 (GND) is the square pad.",
+  "width": 15.24,
+  "height": 28,
+  "color": "#1d6b3a",
+  "pins": [
+    {
+      "id": "vcc",
+      "name": "VCC",
+      "type": "3v3",
+      "x": 3.81,
+      "y": 23,
+      "row": "antenna-side row"
+    },
+    {
+      "id": "csn",
+      "name": "CSN",
+      "type": "spi_cs",
+      "x": 6.35,
+      "y": 23,
+      "row": "antenna-side row"
+    },
+    {
+      "id": "mosi",
+      "name": "MOSI",
+      "type": "spi_mosi",
+      "x": 8.89,
+      "y": 23,
+      "row": "antenna-side row"
+    },
+    {
+      "id": "gdo2",
+      "name": "GDO2",
+      "type": "irq",
+      "x": 11.43,
+      "y": 23,
+      "row": "antenna-side row"
+    },
+    {
+      "id": "gnd",
+      "name": "GND",
+      "type": "gnd",
+      "x": 3.81,
+      "y": 25.54,
+      "row": "edge row"
+    },
+    {
+      "id": "gdo0",
+      "name": "GDO0",
+      "type": "irq",
+      "x": 6.35,
+      "y": 25.54,
+      "row": "edge row"
+    },
+    {
+      "id": "sck",
+      "name": "SCK",
+      "type": "spi_sck",
+      "x": 8.89,
+      "y": 25.54,
+      "row": "edge row"
+    },
+    {
+      "id": "miso",
+      "name": "MISO",
+      "type": "spi_miso",
+      "x": 11.43,
+      "y": 25.54,
+      "row": "edge row",
+      "note": "also GDO1"
+    }
+  ],
+  "notes": "Supply 1.8 to 3.6 V. MISO doubles as GDO1. HaleHound uses GDO0 as TX (to the radio) and GDO2 as RX (from the radio); older ESP32-DIV diagrams have them swapped."
+}

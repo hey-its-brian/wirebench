@@ -1,0 +1,167 @@
+{
+  "id": "ili9341-tft-28",
+  "name": "ILI9341 2.8 inch SPI TFT",
+  "category": "Displays",
+  "tags": [
+    "tft",
+    "spi",
+    "touch"
+  ],
+  "onHand": false,
+  "face": "top",
+  "verified": false,
+  "source": "Common pinout, from memory. Check against the physical part. Typical red 2.8 inch board with a 14-pin display and touch header and a 4-pin SD header. Header positions are schematic.",
+  "width": 86,
+  "height": 50,
+  "color": "#a8271f",
+  "pins": [
+    {
+      "id": "vcc",
+      "name": "VCC",
+      "type": "3v3",
+      "x": 2.5,
+      "y": 8.49,
+      "row": "display header"
+    },
+    {
+      "id": "gnd",
+      "name": "GND",
+      "type": "gnd",
+      "x": 2.5,
+      "y": 11.03,
+      "row": "display header"
+    },
+    {
+      "id": "cs",
+      "name": "CS",
+      "type": "spi_cs",
+      "x": 2.5,
+      "y": 13.57,
+      "row": "display header"
+    },
+    {
+      "id": "reset",
+      "name": "RESET",
+      "type": "enable",
+      "x": 2.5,
+      "y": 16.11,
+      "row": "display header"
+    },
+    {
+      "id": "dc",
+      "name": "DC",
+      "type": "gpio",
+      "x": 2.5,
+      "y": 18.65,
+      "row": "display header"
+    },
+    {
+      "id": "sdi",
+      "name": "SDI",
+      "type": "spi_mosi",
+      "x": 2.5,
+      "y": 21.19,
+      "row": "display header",
+      "note": "MOSI"
+    },
+    {
+      "id": "sck",
+      "name": "SCK",
+      "type": "spi_sck",
+      "x": 2.5,
+      "y": 23.73,
+      "row": "display header"
+    },
+    {
+      "id": "led",
+      "name": "LED",
+      "type": "3v3",
+      "x": 2.5,
+      "y": 26.27,
+      "row": "display header",
+      "note": "backlight"
+    },
+    {
+      "id": "sdo",
+      "name": "SDO",
+      "type": "spi_miso",
+      "x": 2.5,
+      "y": 28.81,
+      "row": "display header",
+      "note": "MISO"
+    },
+    {
+      "id": "t-clk",
+      "name": "T_CLK",
+      "type": "spi_sck",
+      "x": 2.5,
+      "y": 31.35,
+      "row": "display header"
+    },
+    {
+      "id": "t-cs",
+      "name": "T_CS",
+      "type": "spi_cs",
+      "x": 2.5,
+      "y": 33.89,
+      "row": "display header"
+    },
+    {
+      "id": "t-din",
+      "name": "T_DIN",
+      "type": "spi_mosi",
+      "x": 2.5,
+      "y": 36.43,
+      "row": "display header"
+    },
+    {
+      "id": "t-do",
+      "name": "T_DO",
+      "type": "spi_miso",
+      "x": 2.5,
+      "y": 38.97,
+      "row": "display header"
+    },
+    {
+      "id": "t-irq",
+      "name": "T_IRQ",
+      "type": "irq",
+      "x": 2.5,
+      "y": 41.51,
+      "row": "display header"
+    },
+    {
+      "id": "sd-cs",
+      "name": "SD_CS",
+      "type": "spi_cs",
+      "x": 83.5,
+      "y": 21.19,
+      "row": "SD header"
+    },
+    {
+      "id": "sd-mosi",
+      "name": "SD_MOSI",
+      "type": "spi_mosi",
+      "x": 83.5,
+      "y": 23.73,
+      "row": "SD header"
+    },
+    {
+      "id": "sd-miso",
+      "name": "SD_MISO",
+      "type": "spi_miso",
+      "x": 83.5,
+      "y": 26.27,
+      "row": "SD header"
+    },
+    {
+      "id": "sd-sck",
+      "name": "SD_SCK",
+      "type": "spi_sck",
+      "x": 83.5,
+      "y": 28.81,
+      "row": "SD header"
+    }
+  ],
+  "notes": "LED is the backlight supply. The T_ pins are the resistive touch controller and can share the SPI bus with their own chip select."
+}

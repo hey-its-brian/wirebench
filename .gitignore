@@ -1,0 +1,12 @@
+node_modules
+dist
+# Your own work stays on your machine: layouts, pin color choices and uploaded images.
+data/projects/*
+!data/projects/.gitkeep
+data/settings.json
+data/library/images/*
+!data/library/images/.gitkeep
+art/photos/*
+!art/photos/.gitkeep
+.DS_Store
+art/realistic-trial/
